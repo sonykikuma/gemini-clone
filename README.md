@@ -2,9 +2,9 @@
 
 A simple React-based chatroom application simulating Gemini chat interface with OTP authentication, chatroom management, and image upload support.
 
-## LIVE DEMO
+### Live Demo
 
-[live demo](https://gemini-clone-virid-alpha.vercel.app)
+[Live Demo](https://gemini-clone-virid-alpha.vercel.app)
 
 ## Features
 
