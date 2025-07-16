@@ -57,23 +57,6 @@ const Dashboard = ({ darkMode, setDarkMode }) => {
       toast.info(`Chatroom "${deletedRoom.name}" deleted.`);
     }
   };
-  // useEffect(() => {
-  //   const authData = JSON.parse(localStorage.getItem("auth") || "{}");
-  //   if (!authData?.verified) {
-  //     navigate("/");
-  //   } else {
-  //     setCheckingAuth(false);
-  //   }
-  // }, []);
-
-  //if (checkingAuth) return null;
-
-  // useEffect(() => {
-  //   const storedChatrooms = JSON.parse(
-  //     localStorage.getItem("chatrooms") || "[]"
-  //   );
-  //   setChatrooms(storedChatrooms);
-  // }, []);
 
   const visibleChatrooms = searchQuery.trim()
     ? chatrooms.filter((room) =>

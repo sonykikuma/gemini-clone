@@ -19,14 +19,6 @@ const AuthForm = () => {
   const [otpVerified, setOtpVerified] = useState(false);
   const navigate = useNavigate();
 
-  // const {
-  //   register,
-  //   handleSubmit,
-  //   formState: { errors },
-  // } = useForm({
-  //   resolver: zodResolver(schema),
-  // });
-
   const {
     register,
     handleSubmit,
@@ -74,8 +66,6 @@ const AuthForm = () => {
     setTimeout(() => {
       setOtpSent(true);
       toast.info(`Simulated OTP: ${otp}`, { autoClose: 2000 });
-
-      // alert(`Simulated OTP: ${otp}`);
     }, 1000);
   };
 
@@ -142,7 +132,6 @@ const AuthForm = () => {
                     autoClose: 2000,
                   });
 
-                  // alert("OTP Verified Successfully");
                   navigate("/dashboard");
                 } else {
                   toast.error("Invalid OTP", { autoClose: 2000 });

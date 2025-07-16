@@ -4,27 +4,27 @@ A simple React-based chatroom application simulating Gemini chat interface with 
 
 ## Features
 
-Phone Number OTP Authentication
-Form validation using React Hook Form + Zod.
-Fetch country codes dynamically via REST API.
-Simulated OTP generation and verification.
-Auth state stored in localStorage.
-Chatroom Management
-Create, search, and delete chatrooms.
-Persist chatrooms in localStorage.
-Chat Functionality
-Send and receive simulated AI replies.
-Dark mode toggle.
-Message timestamp display.
-Image upload in chat (Base64 encoded).
-Copy message content to clipboard on hover.
-Technologies Used
-React.js
-React Hook Form + Zod
-React Router DOM
-React Toastify
-Axios
-Bootstrap 5 (CSS)
+1. Phone Number OTP Authentication
+2. Form validation using React Hook Form + Zod.
+3. Fetch country codes dynamically via REST API.
+4. Simulated OTP generation and verification.
+5. Auth state stored in localStorage.
+6. Chatroom Management
+7. Create, search, and delete chatrooms.
+8. Persist chatrooms in localStorage.
+9. Dark mode toggle.
+10. Message timestamp display.
+11. Image upload in chat (Base64 encoded).
+12. Copy message content to clipboard on hover.
+
+### Technologies Used
+
+1. React.js
+2. React Hook Form + Zod
+3. React Router DOM
+4. React Toastify
+5. Axios
+6. Bootstrap 5 (CSS)
 
 ### Installation & Setup
 
@@ -38,7 +38,9 @@ npm run dev
 ### Project Structure
 
 /components/AuthForm.js → Handles OTP-based login.
+
 /components/Dashboard.js → Displays chatrooms and handles dark mode.
+
 /components/ChatRoom.js → Displays chat messages, image upload, and copy to clipboard feature.
 
 ### How to Use

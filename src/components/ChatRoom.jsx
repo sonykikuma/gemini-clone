@@ -15,12 +15,6 @@ const ChatRoom = ({ chatroomId, darkMode, chatData, setChatData }) => {
     }
   }, [chatroomId, chatData]);
 
-  //   useEffect(() => {
-  //   if (chatroomId) {
-  //     setMessages(chatData[chatroomId] || []);
-  //   }
-  // }, [chatroomId, chatData]);
-
   useEffect(() => {
     if (chatroomId) {
       setChatData({ ...chatData, [chatroomId]: messages });
@@ -153,38 +147,6 @@ const ChatRoom = ({ chatroomId, darkMode, chatData, setChatData }) => {
           </div>
         ))}
 
-        {/* {messages.map((msg) => (
-          <div
-            key={msg.id}
-            className={`mb-2 ${
-              msg.sender === "user" ? "text-end" : "text-start"
-            }`}
-          >
-            <div
-              className={`p-2 rounded ${
-                msg.sender === "user"
-                  ? "bg-primary text-white"
-                  : darkMode
-                  ? "bg-secondary text-white"
-                  : "bg-light text-dark"
-              }`}
-            >
-              {msg.imageUrl ? (
-                <img
-                  src={msg.imageUrl}
-                  alt="uploaded"
-                  style={{ maxWidth: "200px", maxHeight: "200px" }}
-                />
-              ) : (
-                msg.content
-              )}
-            </div>
-            <small className={darkMode ? "text-light" : "text-muted"}>
-              {msg.timestamp}
-            </small>
-          </div>
-        ))} */}
-
         {isTyping && (
           <div className={darkMode ? "text-light" : "text-muted"}>
             Gemini is typing...
@@ -221,7 +183,31 @@ const ChatRoom = ({ chatroomId, darkMode, chatData, setChatData }) => {
 export default ChatRoom;
 
 {
-  /* {msg.content}
+  /* {messages.map((msg) => (
+          <div
+            key={msg.id}
+            className={`mb-2 ${
+              msg.sender === "user" ? "text-end" : "text-start"
+            }`}
+          >
+            <div
+              className={`p-2 rounded ${
+                msg.sender === "user"
+                  ? "bg-primary text-white"
+                  : darkMode
+                  ? "bg-secondary text-white"
+                  : "bg-light text-dark"
+              }`}
+            >
+              {msg.imageUrl ? (
+                <img
+                  src={msg.imageUrl}
+                  alt="uploaded"
+                  style={{ maxWidth: "200px", maxHeight: "200px" }}
+                />
+              ) : (
+                msg.content
+              )}
             </div>
             <small className={darkMode ? "text-light" : "text-muted"}>
               {msg.timestamp}
@@ -229,18 +215,3 @@ export default ChatRoom;
           </div>
         ))} */
 }
-
-//   useEffect(() => {
-//     if (chatroomId) {
-//       const allChats = JSON.parse(localStorage.getItem("chatMessages") || "{}");
-//       setMessages(allChats[chatroomId] || []);
-//     }
-//   }, [chatroomId]);
-
-//   useEffect(() => {
-//     if (chatroomId) {
-//       const allChats = JSON.parse(localStorage.getItem("chatMessages") || "{}");
-//       allChats[chatroomId] = messages;
-//       localStorage.setItem("chatMessages", JSON.stringify(allChats));
-//     }
-//   }, [messages, chatroomId]);
