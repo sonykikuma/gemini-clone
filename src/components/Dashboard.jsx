@@ -131,7 +131,7 @@ const Dashboard = ({ darkMode, setDarkMode }) => {
               <p>No chatrooms created yet.</p>
             )}
 
-            {/* {selectedChatroomId &&
+            {selectedChatroomId &&
               chatrooms.some((room) => room.id === selectedChatroomId) && (
                 <ChatRoom
                   chatroomId={selectedChatroomId}
@@ -139,14 +139,14 @@ const Dashboard = ({ darkMode, setDarkMode }) => {
                   chatData={chatData}
                   setChatData={setChatData}
                 />
-              )} */}
+              )}
 
-            <ChatRoom
+            {/* <ChatRoom
               chatroomId={selectedChatroomId}
               darkMode={darkMode}
               chatData={chatData}
               setChatData={setChatData}
-            />
+            /> */}
 
             {/* <ChatRoom chatroomId={selectedChatroomId} darkMode={darkMode} /> */}
             {/* <ChatRoom /> */}
