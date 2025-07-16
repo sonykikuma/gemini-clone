@@ -59,3 +59,5 @@ npm run dev
    Upload images or send text.
 4. Copy Message:
    Hover over a message and click the "Copy" button.
+
+   To report any bug in this app, please contact er.abhasoni@gmail.com
