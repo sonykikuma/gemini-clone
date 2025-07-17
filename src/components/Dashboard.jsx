@@ -131,7 +131,7 @@ const Dashboard = ({ darkMode, setDarkMode }) => {
               <p>No chatrooms created yet.</p>
             )}
 
-            {selectedChatroomId &&
+            {/* {selectedChatroomId &&
               chatrooms.some((room) => room.id === selectedChatroomId) && (
                 <ChatRoom
                   chatroomId={selectedChatroomId}
@@ -139,14 +139,14 @@ const Dashboard = ({ darkMode, setDarkMode }) => {
                   chatData={chatData}
                   setChatData={setChatData}
                 />
-              )}
+              )} */}
 
-            {/* <ChatRoom
+            <ChatRoom
               chatroomId={selectedChatroomId}
               darkMode={darkMode}
               chatData={chatData}
               setChatData={setChatData}
-            /> */}
+            />
 
             {/* <ChatRoom chatroomId={selectedChatroomId} darkMode={darkMode} /> */}
             {/* <ChatRoom /> */}
@@ -158,17 +158,6 @@ const Dashboard = ({ darkMode, setDarkMode }) => {
 };
 
 export default Dashboard;
-
-// const handleDeleteChatroom = (id) => {
-//   setChatrooms((prev) => {
-//     const updatedChatrooms = prev.filter((room) => room.id !== id);
-//     if (selectedChatroomId === id) {
-//       setSelectedChatroomId(
-//         updatedChatrooms.length ? updatedChatrooms[0].id : null
-//       );
-//     }
-//     return updatedChatrooms;
-//   });
 
 //   const deletedRoom = chatrooms.find((room) => room.id === id);
 //   if (deletedRoom) {
